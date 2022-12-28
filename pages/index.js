@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <div>
       <Head></Head>
-      <Header />
-      <Hero />
+      <div className="bg-black">
+        <Header />
+        <Hero />
+      </div>
     </div>
   );
 }
