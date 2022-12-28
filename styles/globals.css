@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "addington-bold";
+  src: url("/public/assets/fonts/AddingtonCF-Bold.ttf");
+}
+
+.addington-bold {
+  font-family: "addington-bold";
+}
+
+@font-face {
+  font-family: "addington-regular";
+  src: url("/public/assets/fonts/AddingtonCF-Regular.ttf");
+  /* background-image: url(""); */
+}
+
+.addington-regular {
+  font-family: "addington-regular";
+}
+
+@font-face {
+  font-family: "atvik-semibold";
+  src: url("/public/assets/fonts/AktivGrotesk-Black.ttf");
+}
+
+.atvik-semibold {
+  font-family: "atvik-semibold";
+}
+
+.test {
+  background-image: url("/src/assets/images/global/test.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
