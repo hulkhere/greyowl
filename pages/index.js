@@ -6,14 +6,12 @@ import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <div>
+    <div className="test">
       <Head></Head>
-      <div className="bg-black">
         <Header />
         <Hero />
         <Execution />
         <Experience />
-      </div>
     </div>
   );
 }

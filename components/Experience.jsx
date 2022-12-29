@@ -12,7 +12,7 @@ export default function Experience() {
         Transforming entertainment in rural communities
       </p>
       {/* svg height is 56px on desktop 48px on mobile */}
-      <div className="flex flex-col lg:flex-row gap-x-16 gap-y-4 lg:my-10">
+      <div className="flex flex-col lg:flex-row gap-x-16 gap-y-8 lg:my-10">
         <div className="flex flex-col items-start lg:items-center gap-y-3 lg:gap-y-5">
           <Dolby />
           <div className="text-white lg:text-xl addington-bold max-w-[16rem] lg:max-w-xs text-left lg:text-center">
@@ -34,5 +34,6 @@ export default function Experience() {
         </div>
       </div>
     </div>
+    
   );
 }
