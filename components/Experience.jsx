@@ -11,7 +11,7 @@ export default function Experience() {
       <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-xl mb-4 lg:mb-0">
         Transforming entertainment in rural communities
       </p>
-      {/* height is 56px on desktop 48px on mobile */}
+      {/* svg height is 56px on desktop 48px on mobile */}
       <div className="flex flex-col lg:flex-row gap-x-16 gap-y-4 lg:my-10">
         <div className="flex flex-col items-start lg:items-center gap-y-3 lg:gap-y-5">
           <Dolby />
