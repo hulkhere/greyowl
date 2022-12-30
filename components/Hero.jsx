@@ -5,7 +5,7 @@ import ReelImg from "../public/assets/images/hero/Reel.png";
 export default function Hero() {
   return (
     <div className="w-full flex flex-col justify-center items-start lg:items-center">
-      <p className="p-6 lg:p-0 text-2xl lg:text-[3.4rem] lg:leading-[4.3rem] text-[#FFF9F4] addington-bold max-w-5xl lg:text-center mt-10 mb-4 lg:mt-16 lg:mb-12">
+      <p className="p-6 lg:p-0 text-2xl lg:text-[3.4rem] lg:leading-[4.3rem] text-[#FFF9F4] addington-bold max-w-6xl lg:text-center mt-10 mb-4 lg:mt-16 lg:mb-12">
         A revolutionary new mini-theatre ecosystem designed to bring
         high-quality short form entertainment to rural audiences.
       </p>

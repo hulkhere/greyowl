@@ -21,6 +21,15 @@
 }
 
 @font-face {
+  font-family: "addington-medium";
+  src: url("/assets/fonts/AddingtonCF-Medium.ttf");
+}
+
+.addington-medium {
+  font-family: "addington-medium";
+}
+
+@font-face {
   font-family: "atvik-semibold";
   src: url("/assets/fonts/AktivGrotesk-Black.ttf");
 }
@@ -28,9 +37,8 @@
 .atvik-semibold {
   font-family: "atvik-semibold";
 }
-
 .test {
-  background-image: url("/assets/images/global/test.png");
+  background-image: url("/assets/images/global/bg-global.png");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -41,3 +49,73 @@
 .box-shadow-execution {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* .shit {
+  background: radial-gradient(ellipse at center, #242424, #242424 70%) no-repeat;
+  clip-path: ellipse(49% 30% at 50% 50%);
+} */
+
+/* https://www.youtube.com/watch?v=O18K5plta8w */
+/* @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.card {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1555489400-df7b0ded356d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  width: 100%;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.582);
+  color: white;
+  transform: translateY(100%);
+  transition: all 0.35s ease;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.icons {
+  width: 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons i {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.274);
+  transition: all 0.2s ease;
+}
+
+.icons i:hover {
+  color: rgba(255, 255, 255, 0.438);
+} */
