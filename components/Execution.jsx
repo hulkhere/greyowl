@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HandImg from "../public/assets/images/execution/hand.png";
+import HandImg from "../public/assets/images/execution/Hand.png";
 import MobileHandImg from "../public/assets/images/execution/Hand-mobile.png";
 
 export default function Execution() {
