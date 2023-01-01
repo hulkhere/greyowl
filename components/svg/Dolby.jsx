@@ -9,7 +9,7 @@ const Dolby = (props) => {
       viewBox="0 0 85 56"
       fill="none"
     >
-      <g clip-path="url(#clip0_516_4194)">
+      <g clipPath="url(#clip0_516_4194)">
         <path
           d="M84.8979 0H0.102066V56H84.8979V0Z"
           fill="url(#paint0_linear_516_4194)"
@@ -69,9 +69,9 @@ const Dolby = (props) => {
           y2="55.0358"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFFE88" />
-          <stop offset="0.48" stop-color="#F7AE30" />
-          <stop offset="1" stop-color="#D3760E" />
+          <stop stopColor="#FFFE88" />
+          <stop offset="0.48" stopColor="#F7AE30" />
+          <stop offset="1" stopColor="#D3760E" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_516_4194"
@@ -81,9 +81,9 @@ const Dolby = (props) => {
           y2="34.8549"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFFE88" />
-          <stop offset="0.48" stop-color="#F7AE30" />
-          <stop offset="1" stop-color="#D3760E" />
+          <stop stopColor="#FFFE88" />
+          <stop offset="0.48" stopColor="#F7AE30" />
+          <stop offset="1" stopColor="#D3760E" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_516_4194"
@@ -93,9 +93,9 @@ const Dolby = (props) => {
           y2="26.4961"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFFE88" />
-          <stop offset="0.48" stop-color="#F7AE30" />
-          <stop offset="1" stop-color="#D3760E" />
+          <stop stopColor="#FFFE88" />
+          <stop offset="0.48" stopColor="#F7AE30" />
+          <stop offset="1" stopColor="#D3760E" />
         </linearGradient>
         <clipPath id="clip0_516_4194">
           <rect
