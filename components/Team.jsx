@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-
 export default function Team() {
   return (
     <>
@@ -25,9 +24,7 @@ export default function Team() {
           </p>
         </div>
       </div>
-      <div>
-        
-      </div>
+      <div></div>
     </>
   );
 }

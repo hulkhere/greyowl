@@ -4,6 +4,8 @@ import Experience from "../components/Experience";
 import Header from "../components/global/Header";
 import Headquatered from "../components/Headquatered";
 import Hero from "../components/Hero";
+import Members from "../components/Members";
+import Opportunities from "../components/Opportunities";
 import Team from "../components/Team";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
       <Experience />
       <Team />
       <Headquatered />
+      <Opportunities />
+      <Members />
     </div>
   );
 }
