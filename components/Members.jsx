@@ -16,7 +16,7 @@ export default function Members() {
           <div className="text-sm lg:text-lg max-w-xs">
             Anurag is a serial entrepreneur and a pioneer in micro-finance. He
             envisioned the Banking Correspondent framework in India (Zero Mass
-            Foundation) and also created the country's first mobile payment
+            Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
         </div>
@@ -33,11 +33,12 @@ export default function Members() {
           <div className="text-sm lg:text-lg max-w-xs">
             Anurag is a serial entrepreneur and a pioneer in micro-finance. He
             envisioned the Banking Correspondent framework in India (Zero Mass
-            Foundation) and also created the country's first mobile payment
+            Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
         </div>
-      </div>      <div className="card">
+      </div>{" "}
+      <div className="card">
         <div className="text-white content flex flex-col gap-y-1">
           <div className="flex items-center justify-between">
             <div className="text-white text-3xl font-semibold">
@@ -49,7 +50,7 @@ export default function Members() {
           <div className="text-sm lg:text-lg max-w-xs">
             Anurag is a serial entrepreneur and a pioneer in micro-finance. He
             envisioned the Banking Correspondent framework in India (Zero Mass
-            Foundation) and also created the country's first mobile payment
+            Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
         </div>
