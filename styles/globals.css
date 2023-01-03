@@ -118,3 +118,13 @@ body::-webkit-scrollbar {
     backdrop-filter: blur(10.2px);
   }
 }
+
+.curtain-div {
+  background: linear-gradient(
+    180deg,
+    #fb8121 0%,
+    #a75718 41.7%,
+    #292624 83.25%
+  );
+  box-shadow: 8px 0px 24px rgba(36, 36, 36, 0.32);
+}

@@ -19,7 +19,7 @@ export default function Opportunities() {
           audiences everywhere.
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-4 justify-center my-10 lg:my-20">
+      <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center my-10 lg:my-20">
         <div className="lg:w-96 flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box">
           <div>
             <HustlersLogo />

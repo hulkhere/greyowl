@@ -8,6 +8,7 @@ import Hero from "../components/Hero";
 import Members from "../components/Members";
 import Opportunities from "../components/Opportunities";
 import Team from "../components/Team";
+import Theater from "../components/Theater";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Head></Head>
       <Header />
       <Hero />
+      <Theater />
       <Execution />
       <Experience />
       <Team />
