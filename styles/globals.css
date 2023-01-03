@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "addington-bold";
   src: url("/assets/fonts/AddingtonCF-Bold.ttf");
@@ -66,19 +70,51 @@
   background-position: center;
 }
 
-.content {
-  width: 100%;
-  padding: 15px 25px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  transform: translateY(78%);
-  transition: all 1s ease;
-  backdrop-filter: blur(10.2px);
+/* This is desktop ⬇️ */
+
+@media only screen and (min-width: 1000px) {
+  .content {
+    width: 100%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: translateY(80%);
+    transition: all 1s ease;
+    backdrop-filter: blur(10.2px);
+  }
+
+  .card:hover .content {
+    transform: translateY(0);
+  }
 }
 
-.card:hover .content {
-  transform: translateY(0);
+/* This is mobile ⬇️ */
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 320px;
+    height: 540px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background: url("/assets/images/members/members-test.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    width: 100%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: translateY(2%);
+    transition: all 1s ease;
+    backdrop-filter: blur(10.2px);
+  }
 }

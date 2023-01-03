@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Execution from "../components/Execution";
 import Experience from "../components/Experience";
+import Footer from "../components/Footer";
 import Header from "../components/global/Header";
 import Headquatered from "../components/Headquatered";
 import Hero from "../components/Hero";
@@ -17,9 +18,10 @@ export default function Home() {
       <Execution />
       <Experience />
       <Team />
+      <Members />
       <Headquatered />
       <Opportunities />
-      <Members />
+      <Footer />
     </div>
   );
 }

@@ -1,14 +1,17 @@
 import React from "react";
+import BehanceLogo from "./svg/BehanceLogo";
 import MembersArrow from "./svg/Membersarrow";
+import TwitterLogo from "./svg/Twitterlogo";
+import LinkedinLogo from "./svg/Linkedinlogo";
 
 export default function Members() {
   return (
-    <main className="flex flex-col gap-y-4 gap-x-4 lg:flex-row py-20">
+    <main className="w-full justify-center flex flex-col items-center gap-y-8 gap-x-16 lg:flex-row py-6 lg:py-20">
       <div className="card">
         <div className="text-white content flex flex-col gap-y-1">
           <div className="flex items-center justify-between">
             <div className="text-white text-3xl font-semibold">
-              Anurag Gupta
+              Sarika Bondre
             </div>
             <MembersArrow />
           </div>
@@ -18,6 +21,17 @@ export default function Members() {
             envisioned the Banking Correspondent framework in India (Zero Mass
             Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
+          </div>
+          <div className="flex items-center gap-x-4 mt-2">
+            <a href="">
+              <TwitterLogo />
+            </a>
+            <a href="">
+              <LinkedinLogo />
+            </a>
+            <a href="">
+              <BehanceLogo />
+            </a>
           </div>
         </div>
       </div>
@@ -36,13 +50,24 @@ export default function Members() {
             Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
+          <div className="flex items-center gap-x-4 mt-2">
+            <a href="">
+              <TwitterLogo />
+            </a>
+            <a href="">
+              <LinkedinLogo />
+            </a>
+            <a href="">
+              <BehanceLogo />
+            </a>
+          </div>
         </div>
-      </div>{" "}
+      </div>
       <div className="card">
         <div className="text-white content flex flex-col gap-y-1">
           <div className="flex items-center justify-between">
             <div className="text-white text-3xl font-semibold">
-              Anurag Gupta
+              Gautam Sikhnis
             </div>
             <MembersArrow />
           </div>
@@ -52,6 +77,17 @@ export default function Members() {
             envisioned the Banking Correspondent framework in India (Zero Mass
             Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
+          </div>
+          <div className="flex items-center gap-x-4 mt-2">
+            <a href="">
+              <TwitterLogo />
+            </a>
+            <a href="">
+              <LinkedinLogo />
+            </a>
+            <a href="">
+              <BehanceLogo />
+            </a>
           </div>
         </div>
       </div>
