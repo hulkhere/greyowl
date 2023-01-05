@@ -13,7 +13,7 @@ import TheaterAnimated from "../components/TheaterAnimated";
 
 export default function Home() {
   return (
-    <div className="test">
+    <div className="bg-global">
       <Head></Head>
       <Header />
       <Hero />

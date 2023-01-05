@@ -41,10 +41,8 @@ body::-webkit-scrollbar {
 .atvik-semibold {
   font-family: "atvik-semibold";
 }
-.test {
+.bg-global {
   background-image: url("/assets/images/global/bg-global.png");
-  background-position-x: center;
-  background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
