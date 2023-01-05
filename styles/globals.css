@@ -135,13 +135,10 @@ body::-webkit-scrollbar {
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
-
-/* .v2 {
+.v2 {
   background-image: url("/assets/images/global/v2.png");
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-} */
+}

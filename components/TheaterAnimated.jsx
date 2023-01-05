@@ -77,7 +77,7 @@ export default function TheaterAnimated() {
           ></motion.div>
         </main>
       </div>
-      
+
       <div className="flex">
         <main className="flex">
           <motion.div
