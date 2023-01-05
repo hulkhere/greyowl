@@ -4,6 +4,7 @@ import Dolby from "./svg/Dolby";
 import Image from "next/image";
 import DesktopTickets from "../public/assets/images/tickets/desktop-tickets.png";
 import MobileTickets from "../public/assets/images/tickets/mobile-tickets.png";
+import DolbyImage from "../public/assets/images/global/dolby.png";
 
 export default function Experience() {
   return (
@@ -17,9 +18,9 @@ export default function Experience() {
           Transforming entertainment in rural communities
         </p>
         {/* svg height is 56px on desktop 48px on mobile */}
-        <div className="flex flex-col lg:flex-row gap-x-16 gap-y-8 lg:my-10 rounded-full bg-[#242424] p-16">
-          <div className="flex flex-col items-start lg:items-center gap-y-3 lg:gap-y-5">
-            <Dolby />
+        <div className="flex flex-col lg:flex-row gap-x-16 gap-y-8 lg:my-10 rounded-full bg-[#242424] py-8 lg:p-16">
+          <div className="flex-col items-start lg:items-center gap-y-3 lg:gap-y-5 hidden lg:block">
+            <FourK />
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
               Target of 20,000+ mini-theaters by the end of 2023 in
               Hindi-speaking regions
@@ -33,7 +34,9 @@ export default function Experience() {
             </div>
           </div>
           <div className="flex flex-col items-start lg:items-center gap-y-3 lg:gap-y-5">
-            <Dolby />
+            <div className="w-[152px] h-[56px]">
+              <Image src={DolbyImage} alt="dolby" />
+            </div>
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
               Experience the ultimate in surround sound with 7.1 Dolby Atmos
             </div>

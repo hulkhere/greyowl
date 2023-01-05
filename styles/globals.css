@@ -129,12 +129,26 @@ body::-webkit-scrollbar {
   box-shadow: 8px 0px 24px rgba(36, 36, 36, 0.32);
 }
 
-.theater-bg {
-  background-image: url("/assets/images/theater/theater-bg.png");
-  background-position-x: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media only screen and (min-width: 1000px) {
+  .theater-bg {
+    background-image: url("/assets/images/theater/theater-bg.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* This is mobile ⬇️ */
+
+@media only screen and (max-width: 1000px) {
+  .theater-bg {
+    background-image: url("/assets/images/theater/theater-mob.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 .v2 {
   background-image: url("/assets/images/global/v2.png");
