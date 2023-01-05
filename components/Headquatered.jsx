@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Ellipse from "../public/assets/images/headquatered/ellipse.png";
 import Map from "../public/assets/images/headquatered/map.png";
-import MapMobile from "../public/assets/images/headquatered/map-mobile.png";
+import MapMobile from "../public/assets/images/headquatered/map-mobile.png"
 
 export default function Headquatered() {
   return (
