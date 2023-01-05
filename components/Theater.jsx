@@ -5,7 +5,7 @@ import CurtainsImage from "../public/assets/images/theater/curtains.png";
 
 export default function Theater() {
   return (
-    <div className="theater-bg w-full h-[80vh] lg:h-screen flex-col justify-center items-center flex">
+    <div className="theater-bg w-full h-[60vh] lg:h-screen flex-col justify-center items-center flex">
       <div className="w-80 -mt-44 lg:hidden">
         <Image src={CurtainsImage} alt="curtains" />
       </div>
