@@ -9,6 +9,7 @@ import Members from "../components/Members";
 import Opportunities from "../components/Opportunities";
 import Team from "../components/Team";
 import Theater from "../components/Theater";
+import TheaterAnimated from "../components/TheaterAnimated";
 
 export default function Home() {
   return (
@@ -17,8 +18,11 @@ export default function Home() {
       <Header />
       <Hero />
       <Theater />
-      <Execution />
-      <Experience />
+      {/* <TheaterAnimated /> */}
+      <div className="v2">
+        <Execution />
+        <Experience />
+      </div>
       <Team />
       <Members />
       <Headquatered />

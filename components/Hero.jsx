@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ReelImg from "../public/assets/images/hero/Reel.png";
+import CurtainsImage from "../public/assets/images/theater/curtains.png";
 
 export default function Hero() {
   return (
@@ -22,6 +23,9 @@ export default function Hero() {
           avenues of distribution, exhibition, appreciation & box office revenue
           for their work.
         </p>
+      </div>
+      <div className="hidden lg:block w-40 lg:w-[60rem] -mb-60">
+        <Image src={CurtainsImage} alt="curtains" />
       </div>
     </div>
   );
