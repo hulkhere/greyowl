@@ -77,7 +77,7 @@ export default function Opportunities() {
                   <OpportunitiesLi />
                 </div>
                 <div className="max-w-xs">
-                  we want to welcome you as our early exhibition partner.
+                  We want to welcome you as our early exhibition partner.
                 </div>
               </div>
             </div>
