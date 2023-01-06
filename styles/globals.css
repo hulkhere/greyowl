@@ -41,11 +41,23 @@ body::-webkit-scrollbar {
 .atvik-semibold {
   font-family: "atvik-semibold";
 }
-.bg-global {
-  background-image: url("/assets/images/global/bg-global.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
+@media only screen and (min-width: 1000px) {
+  .bg-global {
+    background-image: url("/assets/images/global/bg-global.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bg-global {
+    background-image: url("/assets/images/global/bg-global-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .box-shadow-execution {
