@@ -37,7 +37,7 @@ export default function Experience() {
           </p>
         </div>
         {/* svg height is 56px on desktop 48px on mobile */}
-        <div className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 py-8 lg:p-16 relative">
+        <div className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 lg:py-8 lg:p-16 relative">
           <div className="absolute hidden lg:block">
             <div className="w-full h-full">
               <Image src={CinemassBlur2} alt="" />
@@ -61,7 +61,7 @@ export default function Experience() {
             <div className="w-[152px] h-[56px] hidden lg:block">
               <Image src={DolbyImage} alt="dolby" />
             </div>
-            <div className="w-[152px] h-[56px] lg:hidden">
+            <div className="w-[128px] h-[35px] lg:hidden">
               <Image src={DolbyMob} alt="dolby" />
             </div>
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
@@ -70,7 +70,7 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="w-full h-max lg:hidden pt-10">
+      <div className="w-full h-max lg:hidden">
         <Image src={MobileTickets} alt="tickets" />
       </div>
       <div className="w-full h-max hidden lg:block lg:pt-32 lg:py-6">
