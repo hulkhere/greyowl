@@ -18,10 +18,10 @@ export default function Members() {
           </div>
           <div className="text-2xl font-semibold">Co-Founder & Director</div>
           <div className="text-sm lg:text-lg max-w-xs">
-            Anurag is a serial entrepreneur and a pioneer in micro-finance. He
-            envisioned the Banking Correspondent framework in India (Zero Mass
-            Foundation) and also created the country&apos;s first mobile payment
-            platform (mCheck).
+            Sarika has over 25 years of experience in handling operationally
+            complex projects in technology & finance domains. Her expertise is
+            capped with a Gold Medal in film-making from Whistling Woods
+            International.
           </div>
           <div className="flex items-center gap-x-4 mt-3 mb-2">
             <a href="">
@@ -74,10 +74,10 @@ export default function Members() {
           </div>
           <div className="text-2xl font-semibold">Co-Founder & Director</div>
           <div className="text-sm lg:text-lg max-w-xs">
-            Anurag is a serial entrepreneur and a pioneer in micro-finance. He
-            envisioned the Banking Correspondent framework in India (Zero Mass
-            Foundation) and also created the country&apos;s first mobile payment
-            platform (mCheck).
+            Gautam has over 25 years experience in entrepreneurship, media &
+            film. He founded Palador Pictures (India&apos;s largest World Cinema
+            Platform) and produced over 500 ad/ corporate films for leading
+            blue-chip brands.
           </div>
           <div className="flex items-center gap-x-4 mt-3 mb-2">
             <a href="">

@@ -11,7 +11,7 @@ export default function Opportunities() {
         <div className="text-[#cc5900] text-base font-semibold">
           Open positions
         </div>
-        <div className="text-4xl font-semibold text-white">
+        <div className="text-4xl text-white addington-bold">
           We’re looking for talented people
         </div>
         <div className="text-xl font-normal text-white">

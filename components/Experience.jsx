@@ -5,7 +5,9 @@ import Image from "next/image";
 import DesktopTickets from "../public/assets/images/tickets/desktop-tickets.png";
 import MobileTickets from "../public/assets/images/tickets/mobile-tickets.png";
 import DolbyImage from "../public/assets/images/global/dolby.png";
+import DolbyMob from "../public/assets/images/global/dolby-mob.png";
 import CinemassBlur from "../public/assets/images/blur-ellipses/cinemass-blur.png";
+import CinemassBlur2 from "../public/assets/images/blur-ellipses/cinemass-below-blur.png";
 
 export default function Experience() {
   return (
@@ -35,24 +37,32 @@ export default function Experience() {
           </p>
         </div>
         {/* svg height is 56px on desktop 48px on mobile */}
-        <div className="flex flex-col lg:flex-row gap-x-16 gap-y-8 lg:my-10 py-8 lg:p-16 relative">
-          <div className="flex-col items-start lg:items-center gap-y-3 lg:gap-y-5 hidden lg:block">
+        <div className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 py-8 lg:p-16 relative">
+          <div className="absolute hidden lg:block">
+            <div className="w-full h-full">
+              <Image src={CinemassBlur2} alt="" />
+            </div>
+          </div>
+          <div className="flex-col items-start lg:items-center gap-y-3 lg:gap-y-5 hidden lg:block z-10">
             <FourK />
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
               Target of 20,000+ mini-theaters by the end of 2023 in
               Hindi-speaking regions
             </div>
           </div>
-          <div className="flex flex-col items-start lg:items-center gap-y-3 lg:gap-y-5">
+          <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-5 z-10">
             <Dolby />
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
               Experience the highest quality streaming with 4K resolution
               Quality
             </div>
           </div>
-          <div className="flex flex-col items-start lg:items-center gap-y-3 lg:gap-y-5">
-            <div className="w-[152px] h-[56px]">
+          <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-5 z-10">
+            <div className="w-[152px] h-[56px] hidden lg:block">
               <Image src={DolbyImage} alt="dolby" />
+            </div>
+            <div className="w-[152px] h-[56px] lg:hidden">
+              <Image src={DolbyMob} alt="dolby" />
             </div>
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
               Experience the ultimate in surround sound with 7.1 Dolby Atmos

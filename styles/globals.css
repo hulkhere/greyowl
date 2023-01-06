@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.3);
     color: white;
-    transform: translateY(80%);
+    transform: translateY(81%);
     transition: all 1s ease;
     backdrop-filter: blur(10.2px);
   }
