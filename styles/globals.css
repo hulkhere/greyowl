@@ -152,17 +152,56 @@ body::-webkit-scrollbar {
 /* This is mobile ⬇️ */
 
 @media only screen and (max-width: 1000px) {
-  .theater-bg {
-    background-image: url("/assets/images/theater/theater-mob.png");
+  /* .theater-bg {
+    background-image: url("/assets/images/theater/theater-test.png");
     background-position-x: center;
     background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  } */
+}
+@media only screen and (max-width: 1000px) {
+  .v2 {
+    background-image: url("/assets/images/theater/theater-test.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .v2 {
+    background-image: url("/assets/images/global/v2.png");
+    background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
-.v2 {
-  background-image: url("/assets/images/global/v2.png");
+
+.first-gradient {
+  background-image: url("/assets/images/gradients/first-gradient.png");
   background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .team-gradient {
+    background-image: url("/assets/images/gradients/team-gradient.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.shitt {
+  color: #ffffffcc;
+}
+
+.footer-gradient {
+  background-image: url("/assets/images/gradients/footer-gradient.png");
+  background-position-x: center;
+  background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

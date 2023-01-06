@@ -20,16 +20,16 @@ export default function Opportunities() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center my-10 lg:my-20">
-        <div className="lg:w-96 flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box">
+        <div className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box">
           <div>
             <HustlersLogo />
           </div>
-          <div className="text-2xl lg:text-3xl addington-bold text-white">
+          <div className="text-2xl lg:text-3xl 2xl:text-4xl addington-bold text-white">
             For Hustlers
           </div>
           <div className="flex flex-col justify-between">
             <div className="flex flex-col gap-y-2">
-              <div className="text-white text-base lg:text-xl flex">
+              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -38,7 +38,7 @@ export default function Opportunities() {
                   revolutionary mission.
                 </div>
               </div>
-              <div className="text-white text-base lg:text-xl flex">
+              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -54,16 +54,16 @@ export default function Opportunities() {
           </div>
         </div>
         {/* ashkjfhakjsfk */}
-        <div className="lg:w-96 flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box">
+        <div className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box">
           <div>
             <CameraLogo />
           </div>
-          <div className="text-2xl lg:text-3xl addington-bold text-white">
+          <div className="text-2xl lg:text-3xl 2xl:text-4xl addington-bold text-white">
             For Filmmakers
           </div>
           <div className="flex h-full flex-col justify-between">
             <div className="flex flex-col gap-y-2">
-              <div className="text-white text-base lg:text-xl flex">
+              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -72,7 +72,7 @@ export default function Opportunities() {
                   art/films or a efficient -visionary producer
                 </div>
               </div>
-              <div className="text-white text-base lg:text-xl flex">
+              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -87,7 +87,7 @@ export default function Opportunities() {
           </div>
         </div>
         {/* ashfghjasgfjg */}
-        <div className="lg:w-96 flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box">
+        <div className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box">
           <div>
             <EveryoneLogo />
           </div>
@@ -96,7 +96,7 @@ export default function Opportunities() {
           </div>
           <div className="flex h-full flex-col justify-between">
             <div className="flex flex-col gap-y-2">
-              <div className="text-white text-base lg:text-xl flex">
+              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -105,7 +105,7 @@ export default function Opportunities() {
                   hesitate!
                 </div>
               </div>
-              <div className="text-white text-base lg:text-xl flex">
+              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>

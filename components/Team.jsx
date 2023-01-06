@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
-
+import Members from "./Members";
+import Headquatered from "./Headquatered";
 export default function Team() {
   return (
     <>
-      <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-6 px-6 pb-6 lg:px-0 lg:pb-0 lg:p-0">
+      <div className="team-gradient flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-6 px-6 pb-6 lg:px-0 lg:pb-0 lg:p-0 lg:py-28">
         <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
           Our team
         </div>
@@ -23,8 +24,8 @@ export default function Team() {
             multi-million dollars exit.
           </p>
         </div>
+        <Members />
       </div>
-      <div></div>
     </>
   );
 }

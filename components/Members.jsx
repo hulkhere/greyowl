@@ -3,6 +3,7 @@ import BehanceLogo from "./svg/BehanceLogo";
 import MembersArrow from "./svg/Membersarrow";
 import TwitterLogo from "./svg/Twitterlogo";
 import LinkedinLogo from "./svg/Linkedinlogo";
+import Headquatered from "./Headquatered";
 
 export default function Members() {
   return (
@@ -22,7 +23,7 @@ export default function Members() {
             Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
-          <div className="flex items-center gap-x-4 mt-2">
+          <div className="flex items-center gap-x-4 mt-3 mb-2">
             <a href="">
               <TwitterLogo />
             </a>
@@ -50,7 +51,7 @@ export default function Members() {
             Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
-          <div className="flex items-center gap-x-4 mt-2">
+          <div className="flex items-center gap-x-4 mt-3 mb-2">
             <a href="">
               <TwitterLogo />
             </a>
@@ -78,7 +79,7 @@ export default function Members() {
             Foundation) and also created the country&apos;s first mobile payment
             platform (mCheck).
           </div>
-          <div className="flex items-center gap-x-4 mt-2">
+          <div className="flex items-center gap-x-4 mt-3 mb-2">
             <a href="">
               <TwitterLogo />
             </a>

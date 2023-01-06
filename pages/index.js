@@ -15,16 +15,14 @@ export default function Home() {
   return (
     <div className="bg-global">
       <Head></Head>
-      <Header />
       <Hero />
       <Theater />
       {/* <TheaterAnimated /> */}
-      <div className="v2">
+      <div className="v2 -mt-[5.5rem] xl:-mt-14">
         <Execution />
         <Experience />
       </div>
       <Team />
-      <Members />
       <Headquatered />
       <Opportunities />
       <Footer />

@@ -5,21 +5,21 @@ import MobileHandImg from "../public/assets/images/execution/Hand-mobile.png";
 
 export default function Execution() {
   return (
-    <div className="flex flex-col lg:flex-row lg:pt-40 lg:pb-20">
+    <div className="flex flex-col lg:flex-row lg:pt-40 lg:pb-20 pt-80">
       <div className="flex flex-col">
         <div className="px-6 pt-6 pb-0 lg:pt-0 lg:p-0 lg:px-16 flex flex-col gap-y-2 lg:gap-y-4">
           <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
             Execution
           </div>
           <div className="addington-bold text-white text-xl lg:text-4xl">
-            How are we executing?
+            Serving Engaging Content{" "}
           </div>
           <div className="text-white text-sm lg:text-lg lg:text-white font-normal max-w-xs lg:max-w-md">
             Everything you need to know about our strategy and content planning
             going forward
           </div>
         </div>
-        <div className="lg:w-[40rem] 2xl:w-[45rem] hidden lg:block">
+        <div className="lg:w-[40rem] 2xl:w-[48rem] hidden lg:block">
           <Image className="" src={HandImg} alt="" />
         </div>
       </div>

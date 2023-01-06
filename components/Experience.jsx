@@ -5,20 +5,37 @@ import Image from "next/image";
 import DesktopTickets from "../public/assets/images/tickets/desktop-tickets.png";
 import MobileTickets from "../public/assets/images/tickets/mobile-tickets.png";
 import DolbyImage from "../public/assets/images/global/dolby.png";
+import CinemassBlur from "../public/assets/images/blur-ellipses/cinemass-blur.png";
 
 export default function Experience() {
   return (
     <>
-      {" "}
       <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-4 p-6 lg:p-0">
-        <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
-          The Cinemass Experience
+        <div className="hidden justify-center items-center relative lg:flex">
+          <div className="absolute">
+            <div className="w-full h-full">
+              <Image src={CinemassBlur} alt="" />
+            </div>
+          </div>
+          <div className="flex flex-col items-center z-10">
+            <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
+              The Cinemass Experience
+            </div>
+            <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
+              Transforming entertainment in rural communities
+            </p>
+          </div>
         </div>
-        <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
-          Transforming entertainment in rural communities
-        </p>
+        <div className="lg:hidden">
+          <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
+            The Cinemass Experience
+          </div>
+          <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
+            Transforming entertainment in rural communities
+          </p>
+        </div>
         {/* svg height is 56px on desktop 48px on mobile */}
-        <div className="flex flex-col lg:flex-row gap-x-16 gap-y-8 lg:my-10 rounded-full bg-[#242424] py-8 lg:p-16">
+        <div className="flex flex-col lg:flex-row gap-x-16 gap-y-8 lg:my-10 py-8 lg:p-16 relative">
           <div className="flex-col items-start lg:items-center gap-y-3 lg:gap-y-5 hidden lg:block">
             <FourK />
             <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">

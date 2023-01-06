@@ -21,7 +21,7 @@ export default function Headquatered() {
         </div> */}
         {/* <div className="shit w-72 h-36 -top-12 right-7 absolute"></div> */}
       </div>
-      <div className="hidden w-[45rem] lg:block">
+      <div className="hidden w-[45rem] 2xl:w-[52rem] lg:block">
         <Image src={Map} alt="map" />
       </div>
       <div className="w-full lg:hidden">
