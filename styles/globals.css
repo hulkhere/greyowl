@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.3);
     color: white;
-    transform: translateY(81%);
+    transform: translateY(78%);
     transition: all 1s ease;
     backdrop-filter: blur(10.2px);
   }
@@ -204,4 +204,9 @@ body::-webkit-scrollbar {
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.blur-div {
+  background: #242424;
+  filter: blur(50px);
 }

@@ -10,7 +10,7 @@ export default function Members() {
     <main className="w-full justify-center flex flex-col items-center gap-y-8 gap-x-16 lg:flex-row py-6 lg:py-20">
       <div className="card">
         <div className="text-white content flex flex-col gap-y-1">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between lg:pb-5 lg:pt-1">
             <div className="text-white text-3xl font-semibold">
               Sarika Bondre
             </div>
@@ -38,7 +38,7 @@ export default function Members() {
       </div>
       <div className="card">
         <div className="text-white content flex flex-col gap-y-1">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between lg:pb-5 lg:pt-1">
             <div className="text-white text-3xl font-semibold">
               Anurag Gupta
             </div>
@@ -66,7 +66,7 @@ export default function Members() {
       </div>
       <div className="card">
         <div className="text-white content flex flex-col gap-y-1">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between lg:pb-5 lg:pt-1">
             <div className="text-white text-3xl font-semibold">
               Gautam Sikhnis
             </div>
