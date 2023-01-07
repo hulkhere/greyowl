@@ -15,7 +15,9 @@ export default function Hero() {
       <button className="mx-6 lg:m-0 w-max mb-6 lg:mb-0 bg-[#fff9f4] text-[#CC5900] font-semibold p-3 px-5 lg:p-4 lg:px-6 rounded-lg text-sm lg:text-[1.375rem]">
         Learn more
       </button>
-      <Image className="w-full h-max overlay" src={ReelImg} alt="" />
+      <div className="overlay-test">
+        <Image className="w-full h-max" src={ReelImg} alt="" />
+      </div>
       <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-6 p-6 lg:p-0">
         <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
           Our Mission

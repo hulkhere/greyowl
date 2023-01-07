@@ -210,3 +210,7 @@ body::-webkit-scrollbar {
   background: #242424;
   filter: blur(50px);
 }
+
+.overlay-test {
+  mix-blend-mode: overlay;
+}
