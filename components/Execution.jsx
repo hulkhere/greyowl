@@ -48,7 +48,7 @@ export default function Execution() {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             exit={{ opacity: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.8 }}
           >
             Focus on outstanding short films, animation clips, and other
             experimental short content
@@ -58,7 +58,7 @@ export default function Execution() {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             exit={{ opacity: 0 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 1.6 }}
           >
             Short films will be sourced and commissioned nationally and globally
             to encourage established filmmakers and undiscovered talent to find
@@ -70,7 +70,7 @@ export default function Execution() {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             exit={{ opacity: 0 }}
-            transition={{ delay: 1.5 }}
+            transition={{ delay: 2.2 }}
           >
             Family and social message-oriented content - an experienced
             editorial board will oversee that controversial, obscene, or
