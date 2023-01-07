@@ -25,12 +25,12 @@ export default function Opportunities() {
           audiences everywhere.
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center lg:justify-start my-10 lg:my-20">
+      <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center lg:justify-start lg:my-20">
         <motion.div
           ref={ref}
-          initial={{ y: isMobile ? "10%" : "75%" }}
-          animate={inView ? { y: 0 } : {}}
-          transition={{ duration: 1.5 }}
+          initial={{ y: isMobile ? "50%" : "75%" }}
+          animate={inView ? { y: 0 } : { y: isMobile ? 100 : "" }}
+          transition={{ duration: 0.5 }}
           className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
         >
           <div>
@@ -68,9 +68,9 @@ export default function Opportunities() {
         {/* ashkjfhakjsfk */}
         <motion.div
           ref={ref}
-          initial={{ y: isMobile ? "10%" : "75%" }}
-          animate={inView ? { y: 0 } : {}}
-          transition={{ duration: 1.5 }}
+          initial={{ y: isMobile ? "50%" : "75%" }}
+          animate={inView ? { y: 0 } : { y: isMobile ? 100 : "" }}
+          transition={{ duration: 1 }}
           className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
         >
           <div>
@@ -107,8 +107,8 @@ export default function Opportunities() {
         {/* ashfghjasgfjg */}
         <motion.div
           ref={ref}
-          initial={{ y: isMobile ? "10%" : "75%" }}
-          animate={inView ? { y: 0 } : {}}
+          initial={{ y: isMobile ? "50%" : "75%" }}
+          animate={inView ? { y: 0 } : { y: isMobile ? 100 : "" }}
           transition={{ duration: 1.5 }}
           className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box"
         >
