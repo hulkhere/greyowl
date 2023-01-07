@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FourK from "./svg/4k";
 import Dolby from "./svg/Dolby";
 import Image from "next/image";
@@ -9,8 +9,12 @@ import DolbyMob from "../public/assets/images/global/dolby-mob.png";
 import CinemassBlur from "../public/assets/images/blur-ellipses/cinemass-blur.png";
 import CinemassBlur2 from "../public/assets/images/blur-ellipses/cinemass-below-blur.png";
 import CinemassBlurMobile from "../public/assets/images/blur-ellipses/mobile-ellipse.png";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 export default function Experience() {
+  const [ref, inView] = useInView({ threshold: 0 });
+
   return (
     <>
       <div className="flex flex-col items-start lg:items-center gap-y-2 lg:mt-40 lg:gap-y-4 p-6 lg:p-0">
@@ -38,15 +42,16 @@ export default function Experience() {
           </p>
         </div>
         {/* svg height is 56px on desktop 48px on mobile */}
-        <div className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 lg:py-8 lg:p-16 relative">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1.5 }}
+          className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 lg:py-8 lg:p-16 relative"
+        >
           <div className="w-full h-60 absolute lg:hidden">
             <div className="blur-div w-full h-full rounded-full"></div>
           </div>
-          {/* <div className="absolute lg:hidden">
-            <div className="w-full h-full">
-              <Image src={CinemassBlurMobile} alt="" />
-            </div>
-          </div> */}
           <div className="absolute hidden lg:block">
             <div className="w-full h-full">
               <Image src={CinemassBlur2} alt="" />
@@ -77,7 +82,7 @@ export default function Experience() {
               Experience the ultimate in surround sound with 7.1 Dolby Atmos
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="w-full h-max lg:hidden">
         <Image src={MobileTickets} alt="tickets" />

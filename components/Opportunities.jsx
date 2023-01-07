@@ -3,8 +3,11 @@ import CameraLogo from "./svg/CameraLogo";
 import HustlersLogo from "./svg/Hustlerslogo";
 import OpportunitiesLi from "./svg/OpprtunitiesLi";
 import EveryoneLogo from "./svg/EveryoneLogo";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export default function Opportunities() {
+  const [ref, inView] = useInView({ threshold: 0 });
+
   return (
     <main className="w-full p-6 sm:p-10 lg:p-8 lg:px-24 flex flex-col">
       <div className="hidden flex-col gap-y-4 lg:flex">
@@ -20,7 +23,14 @@ export default function Opportunities() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center lg:justify-start my-10 lg:my-20">
-        <div className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box">
+        <motion.div
+          ref={ref}
+          initial={{ y: "75%" }}
+          animate={inView ? { y: 0 } : {}}
+          // animate={{ y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
+        >
           <div>
             <HustlersLogo />
           </div>
@@ -52,9 +62,16 @@ export default function Opportunities() {
               Join us
             </button>
           </div>
-        </div>
+        </motion.div>
         {/* ashkjfhakjsfk */}
-        <div className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box">
+        <motion.div
+          ref={ref}
+          initial={{ y: "75%" }}
+          animate={inView ? { y: 0 } : {}}
+          // animate={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
+        >
           <div>
             <CameraLogo />
           </div>
@@ -85,9 +102,16 @@ export default function Opportunities() {
               Join us
             </button>
           </div>
-        </div>
+        </motion.div>
         {/* ashfghjasgfjg */}
-        <div className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box">
+        <motion.div
+          ref={ref}
+          initial={{ y: "75%" }}
+          animate={inView ? { y: 0 } : {}}
+          // animate={{ y: 0 }}
+          transition={{ duration: 1.5 }}
+          className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box"
+        >
           <div>
             <EveryoneLogo />
           </div>
@@ -116,7 +140,7 @@ export default function Opportunities() {
               Say Hi!
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   );

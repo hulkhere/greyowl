@@ -12,7 +12,7 @@ export default function Hero() {
         A revolutionary new mini-theatre ecosystem designed to bring
         high-quality short form entertainment to rural audiences.
       </p>
-      <button className="mx-6 lg:m-0 w-max mb-6 lg:mb-0 bg-[#fff9f4] text-[#CC5900] font-semibold p-3 px-5 lg:p-4 lg:px-6 rounded-lg text-sm lg:text-[1.375rem]">
+      <button className="mx-6 lg:m-0 w-max mb-6 lg:mb-0 bg-[#fff9f4] text-[#CC5900] transition-all hover:text-[#fff9f4] hover:bg-[#cc5900] font-semibold p-3 px-5 lg:p-4 lg:px-6 rounded-lg text-sm lg:text-[1.375rem]">
         Learn more
       </button>
       <Image className="w-full h-max overlay-test" src={ReelImg} alt="" />
