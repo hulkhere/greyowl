@@ -8,6 +8,7 @@ import DolbyImage from "../public/assets/images/global/dolby.png";
 import DolbyMob from "../public/assets/images/global/dolby-mob.png";
 import CinemassBlur from "../public/assets/images/blur-ellipses/cinemass-blur.png";
 import CinemassBlur2 from "../public/assets/images/blur-ellipses/cinemass-below-blur.png";
+import CinemassBlurMobile from "../public/assets/images/blur-ellipses/mobile-ellipse.png";
 
 export default function Experience() {
   return (
@@ -38,6 +39,14 @@ export default function Experience() {
         </div>
         {/* svg height is 56px on desktop 48px on mobile */}
         <div className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 lg:py-8 lg:p-16 relative">
+          <div className="w-full h-60 absolute lg:hidden">
+            <div className="blur-div w-full h-full rounded-full"></div>
+          </div>
+          {/* <div className="absolute lg:hidden">
+            <div className="w-full h-full">
+              <Image src={CinemassBlurMobile} alt="" />
+            </div>
+          </div> */}
           <div className="absolute hidden lg:block">
             <div className="w-full h-full">
               <Image src={CinemassBlur2} alt="" />
@@ -52,7 +61,7 @@ export default function Experience() {
           </div>
           <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-5 z-10">
             <Dolby />
-            <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
+            <div className="text-white text-xl addington-medium max-w-sm lg:max-w-xs text-left lg:text-center">
               Experience the highest quality streaming with 4K resolution
               Quality
             </div>
@@ -64,7 +73,7 @@ export default function Experience() {
             <div className="w-[128px] h-[35px] lg:hidden">
               <Image src={DolbyMob} alt="dolby" />
             </div>
-            <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
+            <div className="text-white text-xl addington-medium max-w-[21rem] lg:max-w-xs text-left lg:text-center">
               Experience the ultimate in surround sound with 7.1 Dolby Atmos
             </div>
           </div>
