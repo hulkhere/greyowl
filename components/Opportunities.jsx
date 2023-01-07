@@ -5,8 +5,11 @@ import OpportunitiesLi from "./svg/OpprtunitiesLi";
 import EveryoneLogo from "./svg/EveryoneLogo";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useMedia } from "use-media";
+
 export default function Opportunities() {
   const [ref, inView] = useInView({ threshold: 0 });
+  const isMobile = useMedia({ maxWidth: 640 });
 
   return (
     <main className="w-full p-6 sm:p-10 lg:p-8 lg:px-24 flex flex-col">
@@ -25,10 +28,9 @@ export default function Opportunities() {
       <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center lg:justify-start my-10 lg:my-20">
         <motion.div
           ref={ref}
-          initial={{ y: "75%" }}
+          initial={{ y: isMobile ? "10%" : "75%" }}
           animate={inView ? { y: 0 } : {}}
-          // animate={{ y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1.5 }}
           className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
         >
           <div>
@@ -66,10 +68,9 @@ export default function Opportunities() {
         {/* ashkjfhakjsfk */}
         <motion.div
           ref={ref}
-          initial={{ y: "75%" }}
+          initial={{ y: isMobile ? "10%" : "75%" }}
           animate={inView ? { y: 0 } : {}}
-          // animate={{ y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
         >
           <div>
@@ -106,9 +107,8 @@ export default function Opportunities() {
         {/* ashfghjasgfjg */}
         <motion.div
           ref={ref}
-          initial={{ y: "75%" }}
+          initial={{ y: isMobile ? "10%" : "75%" }}
           animate={inView ? { y: 0 } : {}}
-          // animate={{ y: 0 }}
           transition={{ duration: 1.5 }}
           className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box"
         >
