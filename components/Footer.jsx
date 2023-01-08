@@ -6,6 +6,7 @@ import FacebookLogo from "./svg/Facebooklogo";
 import Image from "next/image";
 import DesktopFooter from "../public/assets/images/tickets/desktop-footer.png";
 import MobileFooter from "../public/assets/images/tickets/mobile-footer.png";
+import FooterLogo from "./svg/FooterLogo";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
       <main className="footer-gradient">
         <div className="w-full justify-center items-center flex flex-col gap-y-8 py-14">
           <div className="w-[327px] h-[89.42px] lg:w-[362px] lg:h-[99px]">
-            <Logo />
+            <FooterLogo />
           </div>
           {/* <Logo width="362.72" height="99" /> */}
           <div className="flex items-center gap-x-6">

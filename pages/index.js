@@ -16,8 +16,8 @@ export default function Home() {
     <div className="bg-global">
       <Head></Head>
       <Hero />
-      <Theater />
-      {/* <TheaterAnimated /> */}
+      {/* <Theater /> */}
+      <TheaterAnimated />
       <div className="v2 -mt-[5.5rem] xl:-mt-14">
         <Execution />
         <Experience />
