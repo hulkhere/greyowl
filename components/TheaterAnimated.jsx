@@ -8,20 +8,17 @@ export default function TheaterAnimated() {
   const height = useMotionValue(100);
   const elementRef = useRef(null);
 
-  // Use the useInView hook to observe the element
   const [ref, inView] = useInView({
-    threshold: 0, // Set the threshold to 0 so the callback is triggered when the element is fully in view
+    threshold: 0,
   });
 
   useEffect(() => {
-    // Check if the element is in view
     if (inView) {
-      // Set isOpen to true after 1 second
       setTimeout(() => {
         setIsOpen(true);
       }, 1000);
     }
-  }, [inView]); // Re-run the effect whenever inView changes
+  }, [inView]);
 
   return (
     <div ref={ref} className="w-full h-max flex justify-between items-center">
@@ -87,6 +84,10 @@ export default function TheaterAnimated() {
           ></motion.div>
         </main>
       </div>
+      <h1 className="text-2xl lg:text-5xl text-white addington-bold text-center mb-20 lg:mb-0 lg:mt-20 hidden lg:block">
+        We are <span className="text-[#FB8121]"> changing </span> the <br />
+        cinema experience forever
+      </h1>
       <div className="flex">
         <main className="flex curtain-parent-2">
           <motion.div
