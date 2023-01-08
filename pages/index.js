@@ -17,8 +17,8 @@ export default function Home() {
       <Head></Head>
       <Hero />
       {/* <Theater /> */}
-      <TheaterAnimated />
       <div className="v2 -mt-[5.5rem] xl:-mt-14">
+        <TheaterAnimated />
         <Execution />
         <Experience />
       </div>

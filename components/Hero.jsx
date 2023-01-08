@@ -3,6 +3,7 @@ import Image from "next/image";
 import ReelImg from "../public/assets/images/hero/Reel.png";
 import CurtainsImage from "../public/assets/images/theater/curtains.png";
 import Header from "./global/Header";
+import Text from "./Text"
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
           for their work.
         </p>
       </div>
-      <div className="hidden lg:block w-40 lg:w-[60rem] mt-10 lg:-mb-72">
+      <div className="hidden lg:block w-40 xl:w-[60rem] 2xl:w-[65rem] mt-10 lg:-mb-72">
         <Image src={CurtainsImage} alt="curtains" />
       </div>
     </div>
