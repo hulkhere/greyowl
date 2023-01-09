@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../components/svg/Logo";
 import HamOpen from "../svg/HamOpen";
+import Link from "next/link";
 
 // const nav = [
 //   {
@@ -42,12 +43,11 @@ export default function Header() {
         the given div is of length wfull p-1 items-center justify-between {items.title}
           
       </div> */}
-      <a
-        href="/getintouch"
-        className="bg-[#CC5900] px-4 p-2 lg:p-3 lg:px-5 rounded-lg text-white hover:text-[#cc5900] hover:bg-white transition-all"
-      >
-        Get in touch
-      </a>
+      <Link href="/getintouch">
+        <button className="bg-[#CC5900] px-4 p-2 lg:p-3 lg:px-5 rounded-lg text-white hover:text-[#cc5900] hover:bg-white transition-all">
+          Get in touch
+        </button>
+      </Link>
       {/* <button className="lg:hidden">
         <HamOpen />
       </button> */}
