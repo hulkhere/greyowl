@@ -42,9 +42,12 @@ export default function Header() {
         the given div is of length wfull p-1 items-center justify-between {items.title}
           
       </div> */}
-      <button className="bg-[#CC5900] px-4 p-2 lg:p-3 lg:px-5 rounded-lg text-white hover:text-[#cc5900] hover:bg-white transition-all">
+      <a
+        href="/getintouch"
+        className="bg-[#CC5900] px-4 p-2 lg:p-3 lg:px-5 rounded-lg text-white hover:text-[#cc5900] hover:bg-white transition-all"
+      >
         Get in touch
-      </button>
+      </a>
       {/* <button className="lg:hidden">
         <HamOpen />
       </button> */}

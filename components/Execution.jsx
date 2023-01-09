@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import HandImg from "../public/assets/images/execution/Hand.png";
 import MobileHandImg from "../public/assets/images/execution/Hand-mobile.png";
-import ExecutionBlur from "../public/assets/images/blur-ellipses/execution-ellipse.png";
+import ExecutionBlur from "../public/assets/images/blur-ellipses/test.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from 'react-intersection-observer'
 
@@ -11,14 +11,14 @@ export default function Execution() {
 
   return (
     <div className="flex flex-col lg:items-center lg:justify-center lg:flex-row lg:pt-40 lg:pb-20 pt-80">
-      <div className="w-full h-[40rem] absolute hidden lg:block">
+      {/* <div className="w-full h-[40rem] absolute hidden lg:block">
         <div className="blur-div w-full h-full rounded-full"></div>
-      </div>
-      {/* <div className="absolute hidden lg:block">
+      </div> */}
+      <div className="absolute hidden lg:block">
         <div className="w-full h-full">
           <Image src={ExecutionBlur} alt="" />
         </div>
-      </div> */}
+      </div>
       <div className="flex flex-col z-10">
         <div className="px-6 pt-6 pb-0 lg:pt-0 lg:p-0 lg:px-16 flex flex-col gap-y-2 lg:gap-y-4">
           <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">

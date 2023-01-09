@@ -192,6 +192,8 @@ body::-webkit-scrollbar {
     background-image: url("/assets/images/gradients/team-gradient.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
   }
 }
 
