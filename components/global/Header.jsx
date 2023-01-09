@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <main className="w-full p-6 sm:p-10 lg:p-8 lg:px-24 flex items-center justify-between">
-      <div className="w-[140px] h-[38px] lg:w-[238px] lg:h-[65px]">
+      <div className="w-36 lg:w-[180px] lg:h-[80px]">
         <Logo />
       </div>
       {/* <div className="gap-x-8 hidden lg:flex">

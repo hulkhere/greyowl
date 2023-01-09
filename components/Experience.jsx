@@ -90,6 +90,7 @@ export default function Experience() {
       <div className="w-full h-max hidden lg:block lg:pt-32 lg:py-6">
         <Image src={DesktopTickets} alt="tickets" />
       </div>
+      <div className="w-full h-60 blur-[48px] bg-[#242424] relative top-20"></div>
     </>
   );
 }

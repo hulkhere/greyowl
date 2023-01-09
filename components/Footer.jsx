@@ -16,7 +16,6 @@ export default function Footer() {
           <div className="w-[327px] h-[89.42px] lg:w-[362px] lg:h-[99px]">
             <FooterLogo />
           </div>
-          {/* <Logo width="362.72" height="99" /> */}
           <div className="flex items-center gap-x-6">
             <a href="">
               <TwitterLogo />

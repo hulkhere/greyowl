@@ -1,7 +1,7 @@
 import React from "react";
 import CameraLogo from "./svg/CameraLogo";
 import HustlersLogo from "./svg/Hustlerslogo";
-import OpportunitiesLi from "./svg/OpprtunitiesLi";
+import OpportunitiesLi from "./svg/OpportunitiesLi";
 import EveryoneLogo from "./svg/EveryoneLogo";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

@@ -56,6 +56,7 @@ body::-webkit-scrollbar {
     background-image: url("/assets/images/global/bg-global-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
     background-attachment: fixed;
   }
 }
