@@ -8,9 +8,9 @@ export default function Inputs() {
       <main className="flex flex-col gap-y-8 pt-14">
         <div className="flex items-center justify-end">
           <Link href="/">
-            <a className="w-[28px] h-[21px] lg:w-14 lg:h-10">
+            <div className="w-[28px] h-[21px] lg:w-14 lg:h-10 cursor-pointer">
               <CancelLogo />
-            </a>
+            </div>
           </Link>
         </div>
         <div className="flex gap-x-10">
