@@ -1,15 +1,17 @@
 import React from "react";
-import CancelLogo from "../svg/CancelLogo"
-
+import CancelLogo from "../svg/CancelLogo";
+import Link from "next/link";
 
 export default function Inputs() {
   return (
     <>
       <main className="flex flex-col gap-y-8 pt-14">
         <div className="flex items-center justify-end">
-          <a className="w-[28px] h-[21px] lg:w-14 lg:h-10" href="/">
-            <CancelLogo />
-          </a>
+          <Link href="/">
+            <a className="w-[28px] h-[21px] lg:w-14 lg:h-10">
+              <CancelLogo />
+            </a>
+          </Link>
         </div>
         <div className="flex gap-x-10">
           <div className="flex flex-col gap-1.5">
