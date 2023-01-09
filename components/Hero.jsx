@@ -3,7 +3,7 @@ import Image from "next/image";
 import ReelImg from "../public/assets/images/hero/Reel.png";
 import CurtainsImage from "../public/assets/images/theater/curtains.png";
 import Header from "./global/Header";
-import Text from "./Text"
+import Text from "./Text";
 
 export default function Hero() {
   return (
