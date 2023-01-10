@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CancelLogo from "../svg/CancelLogo";
 import Link from "next/link";
-import axios from "axios";
 
 export default function Inputs() {
   return (
