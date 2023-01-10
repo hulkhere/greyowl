@@ -56,7 +56,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .bg-global {
-    background-image: url("/assets/images/global/bg-global-mobile.png");
+    background-image: url("/assets/images/global/iphone.png");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
