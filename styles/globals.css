@@ -61,6 +61,7 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
   }
 }
 
