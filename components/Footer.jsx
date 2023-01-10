@@ -13,9 +13,11 @@ export default function Footer() {
     <>
       <main className="footer-gradient">
         <div className="w-full justify-center items-center flex flex-col gap-y-8 py-14">
-          <div className="w-[327px] h-[89.42px] lg:w-[362px] lg:h-[99px]">
-            <FooterLogo />
-          </div>
+          <a href="#home">
+            <div className="w-[327px] h-[89.42px] lg:w-[362px] lg:h-[99px]">
+              <FooterLogo />
+            </div>
+          </a>
           <div className="flex items-center gap-x-6">
             <a href="">
               <TwitterLogo />

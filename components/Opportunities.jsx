@@ -6,6 +6,7 @@ import EveryoneLogo from "./svg/EveryoneLogo";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useMedia } from "use-media";
+import Link from "next/link";
 
 export default function Opportunities() {
   const [ref, inView] = useInView({ threshold: 0 });
@@ -60,7 +61,7 @@ export default function Opportunities() {
                 </div>
               </div>
             </div>
-            <button className="text-xl text-black font-semibold w-full bg-white py-3 lg:py-4 rounded-xl mt-4">
+            <button className="border-2 border-white text-xl text-black font-semibold w-full bg-white py-3 lg:py-4 rounded-xl mt-4 hover:bg-transparent hover:text-white hover:border-white transition-all">
               Join us
             </button>
           </div>
@@ -99,7 +100,7 @@ export default function Opportunities() {
                 </div>
               </div>
             </div>
-            <button className="text-xl text-black font-semibold w-full bg-white py-3 lg:py-4 rounded-xl mt-4">
+            <button className="border-2 border-white text-xl text-black font-semibold w-full bg-white py-3 lg:py-4 rounded-xl mt-4 hover:bg-transparent hover:text-white hover:border-white transition-all">
               Join us
             </button>
           </div>
@@ -110,12 +111,12 @@ export default function Opportunities() {
           initial={{ y: isMobile ? "50%" : "75%" }}
           animate={inView ? { y: 0 } : { y: isMobile ? 100 : "" }}
           transition={{ duration: 1.5 }}
-          className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 rounded-2xl opportunities-box"
+          className="lg:w-[26rem] 2xl:w-[28rem] flex flex-col items-center gap-y-3 p-8 py-10 2xl:py-12 rounded-2xl opportunities-box"
         >
           <div>
             <EveryoneLogo />
           </div>
-          <div className="text-2xl lg:text-3xl addington-bold text-white">
+          <div className="text-2xl lg:text-3xl 2xl:text-4xl addington-bold text-white">
             For Everyone Else
           </div>
           <div className="flex h-full flex-col justify-between">
@@ -136,9 +137,11 @@ export default function Opportunities() {
                 <div className="max-w-xs">Simply say hi! </div>
               </div>
             </div>
-            <button className="text-xl text-white font-semibold w-full border-white border-2 py-3 lg:py-4 rounded-xl mt-4">
-              Say Hi!
-            </button>
+            <Link href="/getintouch">
+              <button className="text-xl text-white font-semibold w-full border-white border-2 py-3 lg:py-4 rounded-xl mt-4 hover:bg-white hover:text-black transition-all">
+                Say Hi!
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

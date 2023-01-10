@@ -57,16 +57,16 @@ export default function Experience() {
               <Image src={CinemassBlur2} alt="" />
             </div>
           </div>
-          <div className="flex-col items-start lg:items-center gap-y-3 lg:gap-y-5 hidden lg:block z-10">
+          <div className="flex-col items-start lg:items-center gap-y-3 lg:gap-y-5 hidden lg:flex z-10">
             <FourK />
-            <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-xs text-left lg:text-center">
+            <div className="text-white lg:text-xl addington-medium max-w-[16rem] lg:max-w-sm text-left lg:text-center">
               Target of 20,000+ mini-theaters by the end of 2023 in
               Hindi-speaking regions
             </div>
           </div>
           <div className="flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-5 z-10">
             <Dolby />
-            <div className="text-white text-xl addington-medium max-w-sm lg:max-w-xs text-left lg:text-center">
+            <div className="text-white text-xl addington-medium max-w-sm lg:max-w-sm text-left lg:text-center">
               Experience the highest quality streaming with 4K resolution
               Quality
             </div>

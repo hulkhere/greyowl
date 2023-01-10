@@ -26,7 +26,10 @@ export default function Header() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <main className="w-full p-6 sm:p-10 lg:p-8 lg:px-24 flex items-center justify-between">
+    <main
+      id="home"
+      className="w-full p-6 sm:p-10 lg:p-8 lg:px-24 flex items-center justify-between"
+    >
       <div className="w-36 lg:w-[180px] lg:h-[80px]">
         <Logo />
       </div>

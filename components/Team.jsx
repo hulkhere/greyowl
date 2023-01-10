@@ -5,7 +5,7 @@ import Headquatered from "./Headquatered";
 export default function Team() {
   return (
     <>
-      <div className="team-gradient flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-6 px-6 pb-6 lg:px-0 lg:pb-0 lg:p-0 lg:py-28">
+      <div className="team-gradient h-max flex flex-col items-start lg:items-center gap-y-2 lg:gap-y-6 px-6 pb-6 lg:px-0 lg:pb-0 lg:p-0 lg:py-28">
         <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
           Our team
         </div>
@@ -25,6 +25,7 @@ export default function Team() {
           </p>
         </div>
         <Members />
+        {/* <Headquatered /> */}
       </div>
     </>
   );
