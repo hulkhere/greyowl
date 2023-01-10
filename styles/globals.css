@@ -57,11 +57,14 @@ body {
 @media only screen and (max-width: 1000px) {
   .bg-global {
     background-image: url("/assets/images/global/iphone.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
+    /* z-index: -1; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* height: 100%; */
+    /* width: 100%; */
+    background-size: 100%;
+    /* background-attachment: fixed; */
   }
 }
 
