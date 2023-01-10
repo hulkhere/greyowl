@@ -4,13 +4,13 @@ import HandImg from "../public/assets/images/execution/Hand.png";
 import MobileHandImg from "../public/assets/images/execution/Hand-mobile.png";
 import ExecutionBlur from "../public/assets/images/blur-ellipses/test.png";
 import { motion, AnimatePresence } from "framer-motion";
-import { useInView } from 'react-intersection-observer'
+import { useInView } from "react-intersection-observer";
 
 export default function Execution() {
   const [ref, inView] = useInView({ threshold: 0 });
 
   return (
-    <div className="flex flex-col lg:items-center lg:justify-center lg:flex-row lg:pt-40 lg:pb-20 pt-80">
+    <div className="flex flex-col lg:items-center lg:justify-center lg:flex-row lg:pt-40 lg:pb-20">
       {/* <div className="w-full h-[40rem] absolute hidden lg:block">
         <div className="blur-div w-full h-full rounded-full"></div>
       </div> */}

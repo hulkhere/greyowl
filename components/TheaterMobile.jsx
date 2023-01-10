@@ -87,8 +87,8 @@ export default function TheaterMobile() {
             ></motion.div>
           </main>
         </div>
-        <div className="flex flex-col items-center">
-          <div className="lg:hidden w-40 relative bottom-10">
+        <div className="flex flex-col">
+          <div className="lg:hidden w-64 relative bottom-20">
             <Image src={CurtainsImage} alt="curtains" />
           </div>{" "}
           <h1 className="text-2xl lg:text-5xl text-white addington-bold text-center">
