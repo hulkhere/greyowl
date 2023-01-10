@@ -166,7 +166,7 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .v2 {
-    background-image: url("/assets/images/theater/theater-test.png");
+    background-image: url("/assets/images/theater/theater-test-2.png");
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: contain;

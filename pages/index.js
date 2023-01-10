@@ -10,6 +10,7 @@ import Opportunities from "../components/Opportunities";
 import Team from "../components/Team";
 import Theater from "../components/Theater";
 import TheaterAnimated from "../components/TheaterAnimated";
+import TheaterMobile from "../components/TheaterMobile";
 
 export default function Home() {
   return (
@@ -18,7 +19,12 @@ export default function Home() {
       <Hero />
       {/* <Theater /> */}
       <div className="v2 -mt-[5.5rem] xl:-mt-14">
-        <TheaterAnimated />
+        <div className="lg:hidden"> 
+          <TheaterMobile />
+        </div>
+        <div className="hidden lg:block">
+          <TheaterAnimated />
+        </div>
         <Execution />
         <Experience />
       </div>
