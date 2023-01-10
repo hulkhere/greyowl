@@ -21,7 +21,7 @@ export default function Opportunities() {
         <div className="text-4xl text-white addington-bold">
           We’re looking for talented people
         </div>
-        <div className="text-xl font-normal text-white">
+        <div className="text-xl font-normal op-text">
           Join us in our mission to bring the magic of the movies to rural
           audiences everywhere.
         </div>
@@ -42,7 +42,7 @@ export default function Opportunities() {
           </div>
           <div className="flex flex-col justify-between">
             <div className="flex flex-col gap-y-2">
-              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
+              <div className="op-text text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -51,7 +51,7 @@ export default function Opportunities() {
                   revolutionary mission.
                 </div>
               </div>
-              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
+              <div className="op-text text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -82,7 +82,7 @@ export default function Opportunities() {
           </div>
           <div className="flex h-full flex-col justify-between">
             <div className="flex flex-col gap-y-2">
-              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
+              <div className="op-text text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -91,7 +91,7 @@ export default function Opportunities() {
                   art/films or a efficient -visionary producer
                 </div>
               </div>
-              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
+              <div className="op-text text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -121,7 +121,7 @@ export default function Opportunities() {
           </div>
           <div className="flex h-full flex-col justify-between">
             <div className="flex flex-col gap-y-2">
-              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
+              <div className="op-text text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>
@@ -130,7 +130,7 @@ export default function Opportunities() {
                   hesitate!
                 </div>
               </div>
-              <div className="shitt text-base lg:text-xl 2xl:text-2xl flex">
+              <div className="op-text text-base lg:text-xl 2xl:text-2xl flex">
                 <div className="w-2 h-2 lg:w-2 lg:h-2 mt-2.5 mr-2.5">
                   <OpportunitiesLi />
                 </div>

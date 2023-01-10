@@ -12,7 +12,7 @@ export default function Headquatered() {
           Headquartered in
           <span className="text-[#CC5900]"> Mumbai, India</span>
         </h1>
-        <h2 className="text-base lg:text-2xl text-white font-normal max-w-[33rem] z-20">
+        <h2 className="text-base lg:text-2xl op-text font-normal max-w-[33rem] z-20">
           With 3,000 sq. ft. of production, post-production & programming
           infrastructure
         </h2>

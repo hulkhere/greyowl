@@ -27,7 +27,7 @@ export default function Execution() {
           <div className="addington-bold text-white text-xl lg:text-4xl">
             Serving Engaging Content{" "}
           </div>
-          <div className="text-white text-sm lg:text-lg lg:text-white font-normal max-w-xs lg:max-w-md">
+          <div className="op-text text-sm lg:text-lg font-normal max-w-xs lg:max-w-md">
             Everything you need to know about our strategy and content planning
             going forward
           </div>
