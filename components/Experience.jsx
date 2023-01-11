@@ -10,7 +10,10 @@ import CinemassBlur from "../public/assets/images/blur-ellipses/cinemass-blur.pn
 import CinemassBlur2 from "../public/assets/images/blur-ellipses/cinemass-below-blur.png";
 import CinemassBlurMobile from "../public/assets/images/blur-ellipses/mobile-ellipse.png";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import AnimatedText from "../src/AnimatedText";
+
+
 
 export default function Experience() {
   const [ref, inView] = useInView({ threshold: 0 });
