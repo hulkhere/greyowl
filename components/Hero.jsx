@@ -3,7 +3,6 @@ import Image from "next/image";
 import ReelImg from "../public/assets/images/hero/Reel.png";
 import CurtainsImage from "../public/assets/images/theater/curtains.png";
 import Header from "./global/Header";
-import Text from "./Text";
 import AnimatedText from "../src/AnimatedText";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

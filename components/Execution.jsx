@@ -1,10 +1,82 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import HandImg from "../public/assets/images/execution/Hand.png";
 import MobileHandImg from "../public/assets/images/execution/Hand-mobile.png";
 import ExecutionBlur from "../public/assets/images/blur-ellipses/test.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import AnimatedText from "../src/AnimatedText";
+
+const mission = [{ type: "heading1", text: "Serving Engaging Content" }];
+const missionContent = [
+  {
+    type: "heading1",
+    text: "Everything you need to know about our strategy",
+  },
+  {
+    type: "heading1",
+    text: "and content planning going forward",
+  },
+];
+const container = {
+  visible: {
+    transition: {
+      staggerChildren: 0.009,
+    },
+  },
+};
+
+function ExecutionText() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="addington-bold text-white text-xl lg:text-4xl">
+        {mission.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
+function ExecutionSubText() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    setTimeout(() => {
+      //remove the above line incase no need time delay of 1 second
+      if (inView) {
+        controls.start("visible");
+      }
+    }, 1000); //this as well
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="op-text text-sm lg:text-lg font-normal max-w-xs lg:max-w-md">
+        {missionContent.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Execution() {
   const [ref, inView] = useInView({ threshold: 0 });
@@ -24,13 +96,15 @@ export default function Execution() {
           <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
             Execution
           </div>
-          <div className="addington-bold text-white text-xl lg:text-4xl">
+          <ExecutionText />
+          {/* <div className="addington-bold text-white text-xl lg:text-4xl">
             Serving Engaging Content{" "}
-          </div>
-          <div className="op-text text-sm lg:text-lg font-normal max-w-xs lg:max-w-md">
+          </div> */}
+          <ExecutionSubText />
+          {/* <div className="op-text text-sm lg:text-lg font-normal max-w-xs lg:max-w-md">
             Everything you need to know about our strategy and content planning
             going forward
-          </div>
+          </div> */}
         </div>
         <div className="lg:w-[40rem] 2xl:w-[48rem] hidden lg:block">
           <Image className="" src={HandImg} alt="" />
