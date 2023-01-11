@@ -21,7 +21,7 @@ const missionContent = [
 const container = {
   visible: {
     transition: {
-      staggerChildren: 0.009,
+      staggerChildren: 0.002,
     },
   },
 };
