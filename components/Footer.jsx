@@ -8,6 +8,8 @@ import DesktopFooter from "../public/assets/images/tickets/desktop-footer.png";
 import MobileFooter from "../public/assets/images/tickets/mobile-footer.png";
 import FooterLogo from "./svg/FooterLogo";
 import FooterLogoMobile from "./svg/FooterLogoMobile";
+import FooterSvg from "./svg/FooterSvg";
+import FooterMobileSvg from "./svg/FooterMobileSvg";
 
 export default function Footer() {
   return (
@@ -35,12 +37,18 @@ export default function Footer() {
             © 2023 GreyOwl. All rights reserved.
           </div>
         </div>
-        <div className="w-full h-full lg:hidden">
+        {/* <div className="w-full h-full lg:hidden">
           <Image src={MobileFooter} alt="FooterDesktop" />
+        </div> */}
+        <div className="lg:hidden">
+          <FooterMobileSvg />
         </div>
-        <div className="w-full h-full mt-20 hidden lg:block">
+        <div className="hidden lg:block">
+          <FooterSvg />
+        </div>
+        {/* <div className="w-full h-full mt-20 hidden lg:block">
           <Image src={DesktopFooter} alt="FooterDesktop" />
-        </div>
+        </div> */}
       </main>
     </>
   );
