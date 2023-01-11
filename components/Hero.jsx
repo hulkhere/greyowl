@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import ReelImg from "../public/assets/images/hero/Reel.png";
 import CurtainsImage from "../public/assets/images/theater/curtains.png";
 import Header from "./global/Header";
 import Text from "./Text";
 import AnimatedText from "../src/AnimatedText";
-import { motion } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const placeholderMobile = [
   {
@@ -44,6 +45,31 @@ const placeholderDesktop = [
     text: "entertainment to rural audiences.",
   },
 ];
+const mission = [
+  {
+    type: "heading1",
+    text: "Our mission is to get talented short film makers the best",
+  },
+  {
+    type: "heading1",
+    text: "possible avenues of distribution, exhibition, appreciation",
+  },
+  { type: "heading1", text: "& box office revenue for their work." },
+];
+
+const missionMobile = [
+  {
+    type: "heading1",
+    text: "Our mission is to get talented short",
+  },
+  {
+    type: "heading1",
+    text: "film makers the best possible",
+  },
+  { type: "heading1", text: "avenues of distribution, exhibition," },
+  { type: "heading1", text: "appreciation & box office revenue," },
+  { type: "heading1", text: "for their work." },
+];
 
 const container = {
   visible: {
@@ -52,6 +78,55 @@ const container = {
     },
   },
 };
+
+function Mission() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="text-left lg:text-center text-[#dddddd] text-xl lg:text-4xl addington-regular max-w-5xl xl:mb-5">
+        {mission.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
+function MissionMobile() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="text-left lg:text-center text-[#dddddd] text-xl lg:text-4xl addington-regular max-w-5xl xl:mb-5">
+        {missionMobile.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Hero() {
   return (
@@ -89,11 +164,17 @@ export default function Hero() {
         <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
           Our Mission
         </div>
-        <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-4xl addington-regular max-w-4xl xl:mb-5">
+        <div className="lg:hidden">
+          <MissionMobile />
+        </div>
+        <div className="hidden lg:block">
+          <Mission />
+        </div>
+        {/* <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-4xl addington-regular max-w-4xl xl:mb-5">
           Our mission is to get talented short film makers the best possible
           avenues of distribution, exhibition, appreciation & box office revenue
           for their work.
-        </p>
+        </p> */}
       </div>
       <div className="hidden lg:block w-40 xl:w-[60rem] 2xl:w-[65rem] mt-10 lg:-mb-72">
         <Image src={CurtainsImage} alt="curtains" />
