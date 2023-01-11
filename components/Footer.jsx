@@ -7,17 +7,19 @@ import Image from "next/image";
 import DesktopFooter from "../public/assets/images/tickets/desktop-footer.png";
 import MobileFooter from "../public/assets/images/tickets/mobile-footer.png";
 import FooterLogo from "./svg/FooterLogo";
+import FooterLogoMobile from "./svg/FooterLogoMobile";
 
 export default function Footer() {
   return (
     <>
       <main className="footer-gradient">
         <div className="w-full justify-center items-center flex flex-col gap-y-8 py-14">
-          <a href="#home">
-            <div className="w-[327px] h-[89.42px] lg:w-[362px] lg:h-[99px]">
-              <FooterLogo />
-            </div>
-          </a>
+          <div className="lg:hidden">
+            <FooterLogoMobile />
+          </div>
+          <div className="hidden lg:block">
+            <FooterLogo />
+          </div>
           <div className="flex items-center gap-x-6">
             <a href="">
               <TwitterLogo />
