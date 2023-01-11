@@ -164,9 +164,9 @@ export default function Hero() {
         <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
           Our Mission
         </div>
-        <div className="lg:hidden">
+        {/* <div className="lg:hidden">
           <MissionMobile />
-        </div>
+        </div> */}
         <div className="hidden lg:block">
           <Mission />
         </div>
