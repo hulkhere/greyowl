@@ -3,11 +3,23 @@ import { motion, useMotionValue } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import CurtainsImage from "../public/assets/images/theater/curtains.png";
+
 const texts = [
   "We are changing the cinema experience forever",
   "Our state-of-the-art technology allows us to offer a unique and immersive viewing experience in a compact and easily accessible format.",
   "Our mini-theatres are perfect for small towns and remote communities where traditional movie theatres are not always feasible.",
 ];
+
+const highlightedText = texts.map((text, index) => {
+  if (index === 0) {
+    return text.replace(
+      "changing",
+      "<span class='highlighted'>changing</span>"
+    );
+  } else {
+    return text;
+  }
+});
 
 export default function TheaterMobile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +38,6 @@ export default function TheaterMobile() {
     }, 5000);
     return () => clearInterval(intervalId);
   }, [textIndex]);
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     setTimeout(() => {
-  //       setIsOpen(true);
-  //     }, 2000);
-  //   }
-  // }, [inView]);
 
   return (
     <>
@@ -101,22 +105,23 @@ export default function TheaterMobile() {
           </main>
         </div>
         <div className="flex flex-col items-center">
-          <div className="lg:hidden w-60 relative bottom-20">
+          <div className="lg:hidden w-64 relative bottom-20">
             <Image src={CurtainsImage} alt="curtains" />
-          </div>{" "}
-          <div className="text-xl lg:text-5xl text-white addington-bold text-center">
-            <div className="text-container">
-              {texts.map((text, index) => (
-                <div
-                  key={text}
-                  className={`text ${
-                    textIndex === index ? "fade-in" : "hidden"
-                  }`}
-                >
-                  {text}
-                </div>
-              ))}
-            </div>
+          </div>
+          <div className="text-container">
+            {highlightedText.map((text, index) => (
+              <div
+                key={text}
+                className={`text ${
+                  textIndex === index ? "fade-in" : "hidden"
+                } ${
+                  index === 0
+                    ? "text-[1.375rem] lg:text-5xl text-white addington-bold text-center"
+                    : "text-base lg:text-5xl text-white addington-bold text-center"
+                }`}
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
+            ))}
           </div>
         </div>
         <div className="flex">

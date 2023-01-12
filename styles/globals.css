@@ -249,3 +249,7 @@ textarea::first-letter {
     opacity: 1;
   }
 }
+
+.highlighted {
+  color: orange;
+}
