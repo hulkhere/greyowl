@@ -175,7 +175,7 @@ export default function Hero() {
           for their work.
         </p> 
       </div>
-      <div className="hidden lg:block w-40 xl:w-[60rem] 2xl:w-[65rem] mt-10 lg:-mb-[16rem]">
+      <div className="hidden lg:block w-40 xl:w-[60rem] 2xl:w-[65rem] mt-10 lg:-mb-[16rem] z-10">
         <Image src={CurtainsImage} alt="curtains" />
       </div>
     </div>
