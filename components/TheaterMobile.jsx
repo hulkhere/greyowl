@@ -14,13 +14,13 @@ export default function TheaterMobile() {
     threshold: 0,
   });
 
-  useEffect(() => {
-    if (inView) {
-      setTimeout(() => {
-        setIsOpen(true);
-      }, 2000);
-    }
-  }, [inView]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     setTimeout(() => {
+  //       setIsOpen(true);
+  //     }, 2000);
+  //   }
+  // }, [inView]);
 
   return (
     <>
@@ -91,7 +91,7 @@ export default function TheaterMobile() {
           <div className="lg:hidden w-60 relative bottom-20">
             <Image src={CurtainsImage} alt="curtains" />
           </div>{" "}
-          <h1 className="text-2xl lg:text-5xl text-white addington-bold text-center">
+          <h1 className="text-xl lg:text-5xl text-white addington-bold text-center">
             We are <span className="text-[#FB8121]"> changing </span> the <br />
             cinema experience forever
           </h1>
