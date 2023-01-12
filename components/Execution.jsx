@@ -92,7 +92,7 @@ export default function Execution() {
         </div>
       </div> */}
       <div className="flex flex-col z-10">
-        <div className="px-6 pt-6 pb-0 lg:pt-0 lg:p-0 lg:px-16 flex flex-col gap-y-2 lg:gap-y-4">
+        <div className="px-6 pb-0 lg:pt-0 lg:p-0 lg:px-16 flex flex-col gap-y-2 lg:gap-y-4">
           <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
             Execution
           </div>
