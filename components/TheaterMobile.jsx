@@ -135,7 +135,7 @@ export default function TheaterMobile() {
           <div className="lg:hidden w-64 relative bottom-20">
             <Image src={CurtainsImage} alt="curtains" />
           </div>
-          <div className="-mt-14">
+          <div className="-mt-12">
             {highlightedText.map((text, index) => (
               <div
                 key={text}
