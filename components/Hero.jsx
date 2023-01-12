@@ -149,7 +149,7 @@ export default function Hero() {
         animate="visible"
         variants={container}
       >
-        <div className="p-6 lg:p-0 text-2xl max-w-[22rem] lg:text-[3.4rem] lg:leading-[4.3rem] 2xl:text-6xl text-[#FFF9F4] addington-bold lg:max-w-6xl 2xl:max-w-[80rem] 2xl:leading-[4rem] lg:text-center mt-10 mb-4 lg:mt-16 lg:mb-12">
+        <div className="p-6 lg:p-0 text-2xl max-w-[22rem] lg:text-[3.4rem] lg:leading-[4rem] 2xl:text-6xl text-[#FFF9F4] addington-bold lg:max-w-6xl 2xl:max-w-[80rem] 2xl:leading-[4rem] lg:text-center mt-10 mb-4 lg:mt-16 lg:mb-12">
           {placeholderDesktop.map((item, index) => {
             return <AnimatedText {...item} key={index} />;
           })}
@@ -175,7 +175,7 @@ export default function Hero() {
           for their work.
         </p> 
       </div>
-      <div className="hidden lg:block w-40 xl:w-[60rem] 2xl:w-[65rem] mt-10 lg:-mb-72">
+      <div className="hidden lg:block w-40 xl:w-[60rem] 2xl:w-[65rem] mt-10 lg:-mb-[16rem]">
         <Image src={CurtainsImage} alt="curtains" />
       </div>
     </div>
