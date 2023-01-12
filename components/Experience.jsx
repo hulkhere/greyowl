@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FourK from "./svg/4k";
 import Dolby from "./svg/Dolby";
 import Image from "next/image";
@@ -12,8 +12,79 @@ import CinemassBlurMobile from "../public/assets/images/blur-ellipses/mobile-ell
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import AnimatedText from "../src/AnimatedText";
+import { type } from "os";
 
+const experience = [
+  { type: "heading1", text: "Transforming entertainment" },
+  { type: "heading2", text: "in rural communities" },
+];
+const experienceMobile = [
+  {
+    type: "heading1",
+    text: "Transforming entertainment in",
+  },
+  {
+    type: "heading1",
+    text: "rural communities",
+  },
+];
+const container = {
+  visible: {
+    transition: {
+      staggerChildren: 0.002,
+    },
+  },
+};
 
+function ExperienceText() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
+        {experience.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
+
+function ExperienceTextMobile() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="text-left lg:text-center text-[#dddddd] text-xl leading-6 lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
+        {experienceMobile.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Experience() {
   const [ref, inView] = useInView({ threshold: 0 });
@@ -31,18 +102,21 @@ export default function Experience() {
             <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
               The Cinemass Experience
             </div>
-            <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
+            <ExperienceText />
+
+            {/* <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
               Transforming entertainment in rural communities
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="lg:hidden">
-          <div className="text-[#CC5900] text-base lg:text-2xl font-semibold">
+          <div className="text-[#CC5900] text-base lg:text-2xl font-semibold mb-2">
             The Cinemass Experience
           </div>
-          <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
+          <ExperienceTextMobile />
+          {/* <p className="text-left lg:text-center text-[#dddddd] text-xl lg:text-5xl addington-regular max-w-[18rem] lg:max-w-[40rem] mb-4 lg:mb-0">
             Transforming entertainment in rural communities
-          </p>
+          </p> */}
         </div>
         {/* svg height is 56px on desktop 48px on mobile */}
         <motion.div
@@ -50,7 +124,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.5 }}
-          className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 lg:my-10 lg:py-8 lg:p-16 relative"
+          className="flex flex-col justify-center items-center lg:flex-row gap-x-16 gap-y-8 my-2 lg:my-10 lg:py-8 lg:p-16 relative"
         >
           <div className="w-full h-60 absolute lg:hidden">
             <div className="blur-div w-full h-full rounded-full"></div>

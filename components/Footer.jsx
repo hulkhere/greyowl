@@ -43,12 +43,12 @@ export default function Footer() {
         <div className="lg:hidden">
           <FooterMobileSvg />
         </div>
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <FooterSvg />
-        </div>
-        {/* <div className="w-full h-full mt-20 hidden lg:block">
-          <Image src={DesktopFooter} alt="FooterDesktop" />
         </div> */}
+        <div className="w-full h-full mt-20 hidden lg:block">
+          <Image src={DesktopFooter} alt="FooterDesktop" />
+        </div>
       </main>
     </>
   );
