@@ -91,7 +91,7 @@ export default function Experience() {
 
   return (
     <>
-      <div className="flex flex-col items-start lg:items-center gap-y-2 lg:mt-40 lg:gap-y-4 p-6 lg:p-0">
+      <div className="flex flex-col items-start lg:items-center gap-y-2 py-12 lg:mt-40 lg:gap-y-4 p-6 lg:p-0">
         <div className="hidden justify-center items-center relative lg:flex">
           <div className="absolute">
             <div className="w-full h-full">
