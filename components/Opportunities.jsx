@@ -1,12 +1,85 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CameraLogo from "./svg/CameraLogo";
 import HustlersLogo from "./svg/Hustlerslogo";
 import OpportunitiesLi from "./svg/OpportunitiesLi";
 import EveryoneLogo from "./svg/EveryoneLogo";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useMedia } from "use-media";
 import Link from "next/link";
+import AnimatedText from "../src/AnimatedText";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const h1 = [
+  {
+    type: "heading1",
+    text: "We’re looking for talented people",
+  },
+];
+
+const h2 = [
+  {
+    type: "heading2",
+    text: "Join us in our mission to bring the magic of the movies to rural audiences everywhere.",
+  },
+];
+
+const container = {
+  visible: {
+    transition: {
+      staggerChildren: 0.002,
+    },
+  },
+};
+
+function OppH1() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className=""
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="text-4xl text-white addington-bold">
+        {h1.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
+
+function OppH2() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className=""
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className="text-xl font-normal op-text">
+        {h2.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Opportunities() {
   const [ref, inView] = useInView({ threshold: 0 });
@@ -18,13 +91,15 @@ export default function Opportunities() {
         <div className="text-[#cc5900] text-base font-semibold">
           Open positions
         </div>
-        <div className="text-4xl text-white addington-bold">
+        <OppH1 />
+        {/* <div className="text-4xl text-white addington-bold">
           We’re looking for talented people
-        </div>
-        <div className="text-xl font-normal op-text">
+        </div> */}
+        <OppH2 />
+        {/* <div className="text-xl font-normal op-text">
           Join us in our mission to bring the magic of the movies to rural
           audiences everywhere.
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col lg:flex-row h-max gap-y-6 gap-x-14 justify-center lg:justify-start lg:my-20">
         <motion.div
