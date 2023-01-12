@@ -22,7 +22,7 @@ const highlightedText = texts.map((text, index) => {
 });
 
 export default function TheaterMobile() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const width = useMotionValue(6);
   const height = useMotionValue(80);
   const elementRef = useRef(null);
@@ -46,60 +46,87 @@ export default function TheaterMobile() {
           <main className="flex curtain-parent">
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "60vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "60vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-          </main>
-          <main className="flex curtain-parent">
-            <motion.div
-              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-            <motion.div
-              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-            <motion.div
-              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "60vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
           </main>
           <main className="flex curtain-parent">
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "52vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "52vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "52vh" : "100vh",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
+          </main>
+          <main className="flex curtain-parent">
+            <motion.div
+              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "45vh" : "100vh",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
+            <motion.div
+              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "45vh" : "100vh",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
+            <motion.div
+              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "45vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
           </main>
@@ -128,60 +155,87 @@ export default function TheaterMobile() {
           <main className="flex curtain-parent-2">
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "45vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "45vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-          </main>
-          <main className="flex curtain-parent-2">
-            <motion.div
-              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-            <motion.div
-              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-            <motion.div
-              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "45vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
           </main>
           <main className="flex curtain-parent-2">
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "52vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "52vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
               className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
-              style={{ width, height }}
-              animate={{ width: isOpen ? 3 : 6, height: "60vh" }}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "52vh" : "100vh",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
+          </main>
+          <main className="flex curtain-parent-2">
+            <motion.div
+              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "60vh" : "100vh",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
+            <motion.div
+              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "60vh" : "100vh",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
+            <motion.div
+              className={`curtain-div ${isOpen ? "w-20" : "w-40"} h-screen`}
+              style={{ width, height: "100vh" }}
+              animate={{
+                width: isOpen ? 6 : 6,
+                height: isOpen ? "60vh" : "100vh",
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
           </main>
