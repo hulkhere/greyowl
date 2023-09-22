@@ -212,11 +212,9 @@ export default function Opportunities() {
                 <div className="max-w-xs">Simply say hi! </div>
               </div>
             </div>
-            <Link href="/getintouch">
-              <button className="text-xl text-white font-semibold w-full border-white border-2 py-3 lg:py-4 rounded-xl mt-4 hover:bg-white hover:text-black transition-all">
-                Say Hi!
-              </button>
-            </Link>
+            <button className="text-xl text-white font-semibold w-full border-white border-2 py-3 lg:py-4 rounded-xl mt-4 hover:bg-white hover:text-black transition-all">
+              Say Hi!
+            </button>
           </div>
         </motion.div>
       </div>

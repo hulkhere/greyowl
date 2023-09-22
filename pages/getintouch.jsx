@@ -16,7 +16,7 @@ export default function GetInTouch() {
             </div>
           </Link>
           <div className="flex flex-col items-start lg:relative lg:left-20">
-            <h1 className="text-2xl xl:text-4xl 2xl:text-5xl addington-bold text-white">
+            <h1 className="invisible text-2xl xl:text-4xl 2xl:text-5xl addington-bold text-white">
               Get in touch
             </h1>
             <h1 className="text-base lg:text-2xl text-white">

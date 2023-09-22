@@ -47,7 +47,7 @@ export default function Header() {
           
       </div> */}
       <Link href="/getintouch">
-        <button className="bg-[#CC5900] px-4 p-2 lg:p-3 lg:px-5 rounded-lg text-white hover:text-[#cc5900] hover:bg-white transition-all">
+        <button className="invisible bg-[#CC5900] px-4 p-2 lg:p-3 lg:px-5 rounded-lg text-white hover:text-[#cc5900] hover:bg-white transition-all">
           Get in touch
         </button>
       </Link>
